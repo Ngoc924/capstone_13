@@ -1,0 +1,50 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header a {
+    color: #1d365e;
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+  }
+  header a:hover, header a.active {
+    color: #2a73dd;
+  }
+  header a::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background: #2a73dd;
+  }
+  header a:hover::before, header a.active::before {
+    width: 100%;
+    transition: 0.3s;
+  }
+  header .logo {
+    color: #2a73dd;
+    font-size: 50px;
+  }
+  
+  .banner {
+    background-image: url(../image/product-header-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .banner h2 {
+    color: #1d365e;
+  }
+  .banner h3 {
+    color: #1d365e;
+  }
